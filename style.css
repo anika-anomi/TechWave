@@ -188,3 +188,99 @@ body{
     grid-column: span 2;
     padding-bottom: 40px;
 }
+.episode-details{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 120px 200px;
+    background-color: #1A0B2E;
+}
+.episode-details h2{
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.episode-details .episode{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.episode-details .episode .episode-card{
+    border-radius: 16px;
+    overflow: hidden;
+     
+    background-color: #250D44;  
+}
+.episode-details .episode .episode-card .episode-txt{
+    padding: 20px;
+    color: #FFFFFF;
+}
+.episode-details .episode .episode-card .episode-txt h4{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.episode-details .episode .episode-card .episode-txt p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 80%;
+    margin-bottom: 12px;
+}
+.episode-details .episode .episode-card .episode-txt span{
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 80%;
+    color: #00FF88;
+}
+.episode-details .episode .episode-card iframe{
+   width: 100%;
+    height: 315px;
+}
+
+.episode-details .host{
+    margin-top: 120px;
+}
+.episode-details .host .heading{
+    text-align: center;
+}
+.episode-details .host .host-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:  #250D44;
+    border-radius: 16px;
+    padding: 40px;
+    align-items: center;
+    gap: 0px;
+}
+.episode-details .host .host-content .host-text{
+    grid-column: span 2;
+}
+
+.episode-details .host .host-content .host-text h4{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+}
+.episode-details .host .host-content .host-text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 60%;
+}
+.episode-details .host .host-content .social-icons{
+    display: grid;
+    grid-template-columns: repeat(4,4fr);
+    gap: 0px;
+    grid-column: span 1;
+}
+.episode-details .host .host-content .social-icons a img{
+    border: rgba(255, 255, 255, 0.1) 1px solid;
+    border-radius: 50%;
+
+}
