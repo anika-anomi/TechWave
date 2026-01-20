@@ -29,10 +29,12 @@ body{
 }
 .navbar{
     display: flex;
+    gap: 132px;
     justify-content: space-around;
     align-items: center;
     background-color: #1A0B2E;
     padding-top: 24px;
+    cursor: pointer;
 }
 .navbar h1{
     color: white;
@@ -50,6 +52,9 @@ body{
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
+}
+.hamburger{
+    display: none;
 }
 .hero{
     max-width: 1600px;
@@ -105,6 +110,7 @@ body{
     font-size: 16px;
     color: #FFFFFF;
     font-weight: 400;
+    opacity: 80%;
 }
 .hero .hero-content .image-wrapper{
     
@@ -301,14 +307,18 @@ body{
     opacity: 60%;
 }
 .episode-details .host .host-content .social-icons{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 0px;
-    grid-column: span 1;
+    display: flex;
+    gap: 10px;
+}
+.episode-details .host .host-content .social-icons a{
+    border: 1px solid #533C72;
+    border-radius: 50%;
+    padding: 8px;
 }
 .episode-details .host .host-content .social-icons a img{
-    border: rgba(255, 255, 255, 0.1) 1px solid;
-    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    
 
 }
 .footer{
@@ -340,8 +350,121 @@ body{
     gap: 4px;
 }
  .footerp{
-    color: #FFFFFF;
+    color: #FAFAFA;
     font-size: 16px;
     font-weight: 500;
     opacity: 60%;
+}
+
+@media (max-width: 576px){
+    
+    .navbar .hamburger{
+        display: block;
+        max-width: 24px;
+        max-width: 24px;
+    }
+    .navbar .links{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+    }
+    .navbar button{
+        display: none;
+    }
+    .hero{
+        max-width: 440px;
+    
+        padding: 40px 30px;
+        background-image: url('./images/herobg576.png');
+   /*background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+    }
+    .hero .hero-content h2{
+        font-size: 40px;
+    }
+    .hero .hero-content .image-wrapper{
+        width: 150px;
+        height: 150px;
+    }
+    .hero .hero-content .image-wrapper .circle{
+        width: 150px;
+        height: 150px;
+    }
+    .hero .hero-content .image-wrapper .badge{
+        top: 10px;
+        right: 10px;
+        padding: 4px 8px;
+        font-size: 12px;
+        box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.8);
+    }
+    .hero .hero-content .image-wrapper img{
+        width: 80px;
+        height: 100px;
+    }
+    .hero .hero-content h2{
+        font-size: 40px;
+    }
+    .hero .hero-content p{
+
+    font-size: 16px;
+    font-weight: 400;
+    }
+    .about, .features, .episode-details, .footer{
+        max-width: 440px;
+        padding: 40px 30px;
+   }
+   
+   .counts{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+   }
+   .about h2, .features h2, .episode-details h2{
+        font-size: 32px;
+    }
+    .counts h4{
+        font-size: 40px;
+    }
+    .features .box{
+       grid-template-columns: repeat(1, 1fr);
+       gap: 16px;
+       padding-left: 20px;
+       padding-right: 20px;
+       max-width: 440px;
+    }
+    .tall-card, .card, .fat-card{
+       grid-row: span 1;
+       padding: 24px;
+       grid-column: span 1;
+    }
+    .episode-details .episode{
+       grid-template-columns: repeat(1, 1fr);
+       gap: 16px;
+    }
+    .episode-details .episode .episode-card .episode-txt h4{
+       font-size: 20px;
+    }
+    .episode-details .host .host-content{
+       grid-template-columns: repeat(1, 1fr);
+       padding: 24px;
+       place-items: center;
+    }
+    .episode-details .host .host-content .host-text{
+       text-align: center;
+       place-items: center;
+    }
+    .footer .sources{
+       grid-template-columns: repeat(2, 0.4fr); 
+       gap: 0px;
+       place-items: center;
+       justify-content: center;
+       align-items: center;
+    }
+    .footer .sources .icontxt{
+       gap: 4px;
+}  
+
 }
