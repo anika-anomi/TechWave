@@ -58,6 +58,32 @@ body{
     padding: 101px 400px;
     background-image: url('./images/hero-bg.png');
     background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .image-wrapper{
+    background-image: url('./images/hero-circle.png');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-self: center;
+}
+.badge{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    background-color: #00FF88;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.8);
 }
 /*.hero .hero-content{
     background-image: url("./images/hero-circle.png");
@@ -81,13 +107,13 @@ body{
     font-weight: 400;
 }
 .hero .hero-content .image-wrapper{
-    position: relative;
+    
     width: 350px;
     height: 350px;
 }
 .hero .hero-content .image-wrapper .circle{
-    width: 100%;
-    height: 100%;
+    width: 350px;
+    height: 350px;
 }
 .hero .hero-content .image-wrapper img{
     position: absolute;
@@ -193,6 +219,7 @@ body{
     margin: 0 auto;
     padding: 120px 200px;
     background-color: #1A0B2E;
+    margin-bottom: 0px;
 }
 .episode-details h2{
     color: white;
@@ -275,7 +302,7 @@ body{
 }
 .episode-details .host .host-content .social-icons{
     display: grid;
-    grid-template-columns: repeat(4,4fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 0px;
     grid-column: span 1;
 }
@@ -283,4 +310,38 @@ body{
     border: rgba(255, 255, 255, 0.1) 1px solid;
     border-radius: 50%;
 
+}
+.footer{
+    max-width: 1600px;
+    margin: 0;
+    background-color: #1A0B2E;
+    text-align: center;
+    background-image: url(./images/footer-bg.png);
+    background-position: center;
+    padding:120px;
+}
+.footer h1{
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.footer .sources{
+    display: grid;
+    grid-template-columns: repeat(4, 0.13fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2px;   
+}
+.footer .sources .icontxt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+ .footerp{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 60%;
 }
